@@ -1,9 +1,9 @@
-= semantic_form_for @todo_list do |f|
-  = f.semantic_errors :state
-
-  = f.inputs :id => "task" do
-    = f.input :title
-    = f.input :description, :input_html => { :class => 'autogrow', :rows => 10, :cols => 120, :maxlength => 10  }
-  = f.actions do 
-    =f.action :submit, :as => :button
-    =f.action :cancel, :as => :link
+= form_for @todo_list do |f|
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_area :description
+  .actions
+    =f.submit

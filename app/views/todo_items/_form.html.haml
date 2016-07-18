@@ -1,5 +1,4 @@
-= simple_form_for [@todo_list, @todo_list.todo_items.build], {:html => { :class => "form-horizontal" }} do |f|
+= form_for [@todo_list, @todo_list.todo_items.build], {:html => { :class => "form-horizontal" }} do |f|
 
-  = f.input :content, :input_html => { :class => 'autogrow form-control', :rows => 10, :cols => 120, :maxlength => 120  }, placeholder: "New Todo", label: "content", error: 'Content is mandatory, please specify the content'
-  .actions
-    =f.submit :submit
+  = f.text_field :content, :input_html => { :class => 'autogrow form-control', :rows => 10, :cols => 120, :maxlength => 120  }, placeholder: "New Todo", label: "content", error: 'Content is mandatory, please specify the content'
+  =f.submit
