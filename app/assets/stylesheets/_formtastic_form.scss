@@ -1,0 +1,13 @@
+form.formtastic .error {  
+  label, span.help-inline {
+    color: #B94A48;
+  }
+  .checkbox, .radio, input, select, textarea {
+    border-color: #B94A48;
+    color: #B94A48;
+  }
+  .checkbox:focus, .radio:focus, input:focus, select:focus, textarea:focus {
+    border-color: #953B39;
+    box-shadow: 0 0 6px #D59392;
+  }
+}
