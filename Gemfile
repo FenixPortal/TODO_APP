@@ -32,4 +32,4 @@ gem 'haml-rails'
 gem 'paperclip'
 gem 'bootstrap-sass'
 gem 'simple_form'
-gem 'formtastic'
+
